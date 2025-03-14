@@ -68,8 +68,8 @@ const loginpage = () => {
 
       // Define the API endpoint based on the current view
       const endpoint = isLoginView
-        ? 'http://localhost:3000/user/login'
-        : 'http://localhost:3000/user/register';
+        ? 'https://passop-qllt.onrender.com/user/login'
+        : 'https://passop-qllt.onrender.com/user/register';
 
       // Prepare the data to send
       const dataToSend = isLoginView
