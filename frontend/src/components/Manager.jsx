@@ -22,7 +22,7 @@ const Manager = () => {
     useEffect(() => {
         const getCredentials = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/user/credentials', {
+                const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/user/credentials`, {
                     withCredentials: true
                 });
 
@@ -73,7 +73,7 @@ const Manager = () => {
                     username,
                     sitepassword
                 };
-                await axios.post('http://localhost:3000/user/addcredentials', credentialData, {
+                await axios.post(`${import.meta.env.VITE_API_BASE_URL}/user/addcredentials`, credentialData, {
                     withCredentials: true
                 })
                 setSitename('')
@@ -113,7 +113,7 @@ const Manager = () => {
         const c = confirm("Do you really want to delete this Credential?")
         if (c) {
             try {
-                await axios.delete(`http://localhost:3000/user/removecredentials/${_id}`, {
+                await axios.delete(`${import.meta.env.VITE_API_BASE_URL}/user/removecredentials/${_id}`, {
                     withCredentials: true
                 })
 
@@ -137,7 +137,7 @@ const Manager = () => {
 
     const handlelogout = async () => {
         try {
-            await axios.get('http://localhost:3000/user/logout', {
+            await axios.get(`${import.meta.env.VITE_API_BASE_URL}/user/logout`, {
                 withCredentials: true
             })
             toast('Successfully LoggedOut', {
