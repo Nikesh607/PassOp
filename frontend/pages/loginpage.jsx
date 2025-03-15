@@ -122,7 +122,7 @@ const loginpage = () => {
   return (
     <div>
       <div className='min-h-[80vh] flex items-center justify-center'>
-        <div className="flex flex-col gap-10 w-1/2 mx-auto p-6 height">
+        <div className="flex flex-col gap-10 mx-auto p-6 height sm:w-1/2">
           {/* Header Section */}
           <div className="flex flex-col items-center justify-center gap-4 bg-slate-900 p-6 rounded-lg marginbottom">
             <div className="size flex justify-center items-center font-bold mb-2">
@@ -137,7 +137,7 @@ const loginpage = () => {
           </div>
 
           {/* Form Section */}
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4 formwidth">
+          <form onSubmit={handleSubmit} className="flex flex-col colgap sm:gap-4 formwidth">
             {/* Name field - only shown for registration */}
             {!isLoginView && (
               <div>

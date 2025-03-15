@@ -1,34 +1,47 @@
-.red{
+.red {
   background-color: white;
-  color: black; 
+  color: black;
   padding: 7px 10px;
   border-radius: 29px;
 }
-.height{
+
+.height {
   margin-top: 40px;
-    height: 80vh;  
+  height: 80vh;
 }
-.maxwidth{
+
+.maxwidth {
   max-width: 80%;
 }
-.marginbottom{
+
+.marginbottom {
   margin-bottom: 30px;
 }
-.size{
+
+.size {
   font-size: 24px;
 }
-.formwidth{
-  width: 40vw;
-    margin-left: 76px;
-    gap: 15px;
+
+.colgap{
+  gap: 12px
 }
-.buttonwidth{
+
+.buttonwidth {
   width: 75px;
 }
-.margintop{
+
+.margintop {
   margin-top: 20px;
 }
-.eyeposition{
+
+.eyeposition {
   top: 10px;
   right: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .formwidth {
+    width: 40vw;
+    gap: 15px;
+  }
 }
